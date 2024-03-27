@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDC300012BB46DC900031D13 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC300002BB46DC900031D13 /* Home.swift */; };
 		BDC3FFF82BB328E600031D13 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3FFF72BB328E600031D13 /* Welcome.swift */; };
 		BDC3FFFA2BB336D200031D13 /* AppInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3FFF92BB336D200031D13 /* AppInformation.swift */; };
 		BDC3FFFE2BB45F9900031D13 /* SignInSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3FFFD2BB45F9900031D13 /* SignInSignUp.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BDC300002BB46DC900031D13 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		BDC3FFF72BB328E600031D13 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		BDC3FFF92BB336D200031D13 /* AppInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInformation.swift; sourceTree = "<group>"; };
 		BDC3FFFD2BB45F9900031D13 /* SignInSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSignUp.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 			path = "Sign In Sign Up";
 			sourceTree = "<group>";
 		};
+		BDC3FFFF2BB46DB400031D13 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BDC300002BB46DC900031D13 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		BDE47CAA2BB30B2A00611130 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		BDE47CC42BB311F200611130 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BDC3FFFF2BB46DB400031D13 /* Home */,
 				BDC3FFFB2BB4568F00031D13 /* New Group */,
 				BDC3FFF62BB328D100031D13 /* WelcomeScreens */,
 				BDE47CC52BB311FC00611130 /* SplashScreen */,
@@ -195,6 +206,7 @@
 				BDE47CC72BB3121900611130 /* SplashScreen.swift in Sources */,
 				BDE47CB92BB30B2A00611130 /* AppView.swift in Sources */,
 				BDE47CB72BB30B2A00611130 /* DigitalizeAwareApp.swift in Sources */,
+				BDC300012BB46DC900031D13 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
