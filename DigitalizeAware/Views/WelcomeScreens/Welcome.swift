@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Welcome: View {
     @State private var isWhiteShadow = true
-    @State private var isSignInSignUpActive = false // Zustand für die Aktivierung der SignInSignUp-Ansicht
+    @State private var isSignInSignUpActive = false
     
     var body: some View {
         NavigationView {
