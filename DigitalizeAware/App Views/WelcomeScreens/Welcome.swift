@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Welcome: View {
+    
     @State private var isWhiteShadow = true
     @State private var isSignInSignUpActive = false
     
@@ -15,7 +16,6 @@ struct Welcome: View {
         NavigationView {
             ZStack {
                 Color.black.edgesIgnoringSafeArea(.all)
-                
                 VStack {
                     Text("Welcome to")
                         .font(.title)
@@ -45,18 +45,13 @@ struct Welcome: View {
                         .padding(.bottom)
                     HStack {
                         Spacer()
-                        Button(action: {
-                            isSignInSignUpActive.toggle() // Aktiviere die SignInSignUp-Ansicht
-                        }) {
+                        NavigationLink(destination: SignInSignUp()) {
                             Image(systemName: "chevron.forward.2")
                                 .foregroundColor(.black)
                                 .bold()
                                 .padding(8)
                                 .background(Color.white)
                                 .cornerRadius(10)
-                        }
-                        .fullScreenCover(isPresented: $isSignInSignUpActive) {
-                            SignInSignUp() // Navigiere zur SignInSignUp-Ansicht
                         }
                     }
                 }
