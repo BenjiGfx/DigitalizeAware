@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD4F27802BB720FA00677B9B /* InternalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F277F2BB720FA00677B9B /* InternalData.swift */; };
+		BD4F27832BB7243300677B9B /* AllNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F27822BB7243300677B9B /* AllNews.swift */; };
+		BD4F27872BB727A900677B9B /* FormatterFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F27862BB727A900677B9B /* FormatterFunctions.swift */; };
+		BD4F27892BB735D400677B9B /* NewsDV.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F27882BB735D400677B9B /* NewsDV.swift */; };
+		BD4F27912BB74B1600677B9B /* Digitalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F27902BB74B1600677B9B /* Digitalization.swift */; };
 		BDC300012BB46DC900031D13 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC300002BB46DC900031D13 /* Home.swift */; };
 		BDC300042BB4F54400031D13 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC300032BB4F54400031D13 /* Information.swift */; };
 		BDC3000A2BB4F63000031D13 /* TipsAndResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC300092BB4F63000031D13 /* TipsAndResources.swift */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD4F277F2BB720FA00677B9B /* InternalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalData.swift; sourceTree = "<group>"; };
+		BD4F27822BB7243300677B9B /* AllNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNews.swift; sourceTree = "<group>"; };
+		BD4F27862BB727A900677B9B /* FormatterFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterFunctions.swift; sourceTree = "<group>"; };
+		BD4F27882BB735D400677B9B /* NewsDV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDV.swift; sourceTree = "<group>"; };
+		BD4F27902BB74B1600677B9B /* Digitalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digitalization.swift; sourceTree = "<group>"; };
 		BDC300002BB46DC900031D13 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		BDC300032BB4F54400031D13 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		BDC300092BB4F63000031D13 /* TipsAndResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsAndResources.swift; sourceTree = "<group>"; };
@@ -62,11 +72,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD4F277E2BB720BB00677B9B /* Internal Data */ = {
+			isa = PBXGroup;
+			children = (
+				BD4F277F2BB720FA00677B9B /* InternalData.swift */,
+			);
+			path = "Internal Data";
+			sourceTree = "<group>";
+		};
+		BD4F27812BB7241000677B9B /* Detail Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BD4F27882BB735D400677B9B /* NewsDV.swift */,
+			);
+			path = "Detail Screens";
+			sourceTree = "<group>";
+		};
+		BD4F27842BB724CC00677B9B /* List Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BD4F27822BB7243300677B9B /* AllNews.swift */,
+			);
+			path = "List Screens";
+			sourceTree = "<group>";
+		};
+		BD4F27852BB7279000677B9B /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				BD4F27862BB727A900677B9B /* FormatterFunctions.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		BD4F278A2BB7394E00677B9B /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BDC300032BB4F54400031D13 /* Information.swift */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+		BD4F278B2BB74A8D00677B9B /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				BD4F27902BB74B1600677B9B /* Digitalization.swift */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
 		BDC300022BB4F52F00031D13 /* Information */ = {
 			isa = PBXGroup;
 			children = (
+				BD4F278B2BB74A8D00677B9B /* Documentation */,
+				BD4F278A2BB7394E00677B9B /* Main Screen */,
+				BD4F27842BB724CC00677B9B /* List Screens */,
+				BD4F27812BB7241000677B9B /* Detail Screens */,
 				BDC300242BB58A1700031D13 /* Card Views */,
-				BDC300032BB4F54400031D13 /* Information.swift */,
 			);
 			path = Information;
 			sourceTree = "<group>";
@@ -198,12 +259,12 @@
 			path = WelcomeScreens;
 			sourceTree = "<group>";
 		};
-		BDC3FFFB2BB4568F00031D13 /* New Group */ = {
+		BDC3FFFB2BB4568F00031D13 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				BDC3FFFC2BB456C500031D13 /* Sign In Sign Up */,
 			);
-			path = "New Group";
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		BDC3FFFC2BB456C500031D13 /* Sign In Sign Up */ = {
@@ -241,6 +302,8 @@
 		BDE47CB52BB30B2A00611130 /* DigitalizeAware */ = {
 			isa = PBXGroup;
 			children = (
+				BD4F27852BB7279000677B9B /* Formatter */,
+				BD4F277E2BB720BB00677B9B /* Internal Data */,
 				BDC300202BB587A600031D13 /* Enums */,
 				BDC300152BB5830E00031D13 /* View Models */,
 				BDC300122BB5823C00031D13 /* Data Models */,
@@ -265,7 +328,7 @@
 			children = (
 				BDC300112BB4FD6800031D13 /* App View */,
 				BDC300052BB4F5A800031D13 /* Main Screens */,
-				BDC3FFFB2BB4568F00031D13 /* New Group */,
+				BDC3FFFB2BB4568F00031D13 /* Authentication */,
 				BDC3FFF62BB328D100031D13 /* WelcomeScreens */,
 				BDE47CC52BB311FC00611130 /* SplashScreen */,
 			);
@@ -356,14 +419,19 @@
 				BDC300042BB4F54400031D13 /* Information.swift in Sources */,
 				BDC3FFFA2BB336D200031D13 /* AppInformation.swift in Sources */,
 				BDC300232BB587CA00031D13 /* HTTPError.swift in Sources */,
+				BD4F27892BB735D400677B9B /* NewsDV.swift in Sources */,
+				BD4F27912BB74B1600677B9B /* Digitalization.swift in Sources */,
 				BDC3001C2BB5839900031D13 /* NewsRT.swift in Sources */,
 				BDC3001F2BB586A500031D13 /* API_Keys.swift in Sources */,
 				BDE47CC72BB3121900611130 /* SplashScreen.swift in Sources */,
 				BDC3000D2BB4F67900031D13 /* Community.swift in Sources */,
 				BDC300172BB5833400031D13 /* NewsVM.swift in Sources */,
 				BDC300142BB5827500031D13 /* News.swift in Sources */,
+				BD4F27832BB7243300677B9B /* AllNews.swift in Sources */,
 				BDE47CB92BB30B2A00611130 /* AppView.swift in Sources */,
 				BDE47CB72BB30B2A00611130 /* DigitalizeAwareApp.swift in Sources */,
+				BD4F27802BB720FA00677B9B /* InternalData.swift in Sources */,
+				BD4F27872BB727A900677B9B /* FormatterFunctions.swift in Sources */,
 				BDC300012BB46DC900031D13 /* Home.swift in Sources */,
 				BDC300102BB4F6AB00031D13 /* Settings.swift in Sources */,
 				BDC3000A2BB4F63000031D13 /* TipsAndResources.swift in Sources */,

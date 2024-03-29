@@ -32,17 +32,17 @@ class NewsVM: ObservableObject {
     }
     
     private func fetchArticles() async throws -> [Article] {
-        let headers = [
-            "X-RapidAPI-Key": API_Keys.articlesAPI_Key
-        ]
+//        let headers = [
+//            "X-RapidAPI-Key": API_Keys.articlesAPI_Key
+//        ]
         
-        guard let url = URL(string: "https://newsapi.org/v2/everything?q=digitalization") else {
+        guard let url = URL(string: "https://newsapi.org/v2/everything?q=digitalization&apiKey=6d3e88d2a7134987a51ab3e6afde4aad") else {
             throw HTTPError.invalidURL
         }
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.allHTTPHeaderFields = headers
+        //request.allHTTPHeaderFields = headers
         
         let (data, _) = try await URLSession.shared.data(for: request)
         let response = try JSONDecoder().decode(Articles.self, from: data)
